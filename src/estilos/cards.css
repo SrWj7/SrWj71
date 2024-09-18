@@ -1,0 +1,328 @@
+*{
+    font-family: Segoe UI;
+}
+body{
+    margin: 0;
+}
+header{
+    width:100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0 0 10px #000;
+    background: rgba(0,0,0,0.5);
+    color: #000;
+}
+#chk1{
+    display: none;
+     
+     
+}
+i{
+    color: #fff;
+    cursor: pointer;
+}
+header .logo{
+    flex: 1;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.logo{
+    background-image: linear-gradient(90deg, rgba(7,4,46,1) 0%, rgba(9,9,218,1) 35%, rgba(0,212,255,1) 100%);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+  
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent; 
+}
+header .search-box{
+    flex: 1;
+    position: relative;
+}
+.search-box input{
+    width:100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background:#f2f2f2;
+    border-radius: 30px;
+    color:gray;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 40px;
+    text-align: center;
+     
+}
+ 
+.search-box button{
+    cursor: pointer;
+    width:40px;
+    height: 40px;
+    border-radius: 30px;
+    border:none;
+    position: absolute;
+    top:0;
+    right: 0;
+    transform: scale(0.9);
+    background: #0909da;
+    color: #fff;
+}
+header ul {
+    flex:2;
+    display: flex;
+    justify-content: space-evenly;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+header ul li a:hover{
+    border-bottom: 2px solid #00d4ff;
+}
+header .menu{
+    font-size: 2.5em;
+    display: none;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #f1f1f1;
+    background-color: #444;
+}
+.card{
+    background-image: linear-gradient(#333, #333);
+    overflow: hidden;
+    border-radius: 16px;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .5s;
+}
+.card:hover{
+    background-image: linear-gradient(90deg, rgba(7,4,46,1) 0%, rgba(9,9,218,1) 35%, rgba(0,212,255,1) 100%);
+}
+.card .img{
+    background-image: url('/images/mustang.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .8;
+    transition: all .5s;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card:hover .img{
+    opacity: 1;
+    width: 440px;
+}
+.card .img span{
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.card .content{
+    padding: 0 20px;
+    overflow: hidden;
+    height: 0;
+    transition: all .5s;
+    transform: translateY(30px);
+    opacity: 0;
+}
+.card:hover .content{
+    padding: 20px;
+    height: 260px;
+    opacity: 1;
+    transform: translateY(0);
+}
+.card .content p{
+    margin-bottom: 0;
+}
+.card .content .title{
+    font-size: 24px;
+    font-weight: bold;
+}
+.card .content .desc{
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .7;
+}
+.card .arrow{
+    padding: 15px;
+    font-size: 28px;
+    transition: all .5s;
+    transform: rotate(-180deg);
+}
+.card:hover .arrow{
+    transform: rotate(0);
+}
+
+.card1{
+    background-image: linear-gradient(#333, #333);
+    overflow: hidden;
+    border-radius: 16px;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .5s;
+}
+.card1:hover{
+    background-image: linear-gradient(90deg, rgba(7,4,46,1) 0%, rgba(9,9,218,1) 35%, rgba(0,212,255,1) 100%);
+}
+.card1 .img{
+    background-image: url('/images/toyota.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .8;
+    transition: all .5s;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card1:hover .img{
+    opacity: 1;
+    width: 440px;
+}
+.card1 .img span{
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.card1 .content{
+    padding: 0 20px;
+    overflow: hidden;
+    height: 0;
+    transition: all .5s;
+    transform: translateY(30px);
+    opacity: 0;
+}
+.card1:hover .content{
+    padding: 20px;
+    height: 260px;
+    opacity: 1;
+    transform: translateY(0);
+}
+.card1 .content p{
+    margin-bottom: 0;
+}
+.card1 .content .title{
+    font-size: 24px;
+    font-weight: bold;
+}
+.card1 .content .desc{
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .7;
+}
+.card1 .arrow{
+    padding: 15px;
+    font-size: 28px;
+    transition: all .5s;
+    transform: rotate(-180deg);
+}
+.card1:hover .arrow{
+    transform: rotate(0);
+}
+
+.card2{
+    background-image: linear-gradient(#333, #333);
+    overflow: hidden;
+    border-radius: 16px;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .5s;
+}
+.card2:hover{
+    background-image: linear-gradient(90deg, rgba(7,4,46,1) 0%, rgba(9,9,218,1) 35%, rgba(0,212,255,1) 100%);
+}
+.card2 .img{
+    background-image: url('/images/lamborghini.png');
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .8;
+    transition: all .5s;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card2:hover .img{
+    opacity: 1;
+    width: 440px;
+}
+.card2 .img span{
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.card2 .content{
+    padding: 0 20px;
+    overflow: hidden;
+    height: 0;
+    transition: all .5s;
+    transform: translateY(30px);
+    opacity: 0;
+}
+.card2:hover .content{
+    padding: 20px;
+    height: 260px;
+    opacity: 1;
+    transform: translateY(0);
+}
+.card2 .content p{
+    margin-bottom: 0;
+}
+.card2 .content .title{
+    font-size: 24px;
+    font-weight: bold;
+}
+.card2 .content .desc{
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .7;
+}
+.card2 .arrow{
+    padding: 15px;
+    font-size: 28px;
+    transition: all .5s;
+    transform: rotate(-180deg);
+}
+.card2:hover .arrow{
+    transform: rotate(0);
+}

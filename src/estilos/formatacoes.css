@@ -1,0 +1,55 @@
+@font-face {
+	font-family:fonte1;
+	src: url("../fontes/Retrolight.ttf");
+}
+body.xyz{
+	background: #565665;
+	color: aqua;
+}
+p.titulo{
+	font-family: fonte1;
+	font-size: 35px;
+	text-align: center;
+}
+p.tituloexercicio{
+	font-family: fonte1;
+	font-size: 35px;
+	text-align: center;
+	color: blue;	
+}
+a.menu{
+	font-family: fonte1;
+	font-size: 25px;
+	text-align: center;
+	text-decoration: none;
+}
+a.menu:hover{
+	font-weight: bold;
+	color: rgb(152,251,152);
+}
+div.bg{
+	/*background-color: #008080;*/
+	border: 1px solid black;
+	height: auto;	
+	
+}
+a.menud{
+	font-family: fonte1;
+	text-align: center;
+	size: 90px;
+	text-decoration: none;
+	background-color: #87CEEB;
+}
+a.menud:hover{
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+}
+a.menui{
+	text-align: center;
+	text-decoration: none;
+	background-color: rgb(255, 255, 255);
+}
+a.menui:hover{
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+}

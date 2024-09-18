@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/cads.css">
+    <link rel="stylesheet" href="estilos/rolagem.css">
+    <script src="https://kit.fontawesome.com/37b0d771a1.js" crossorigin="anonymous"></script>
+    <title>Otaku's Computer</title>
+</head>
+<body>
+
+<div>
+    <h1 class="titulo">
+        Cadastro Produto
+    </h1>
+</div>
+<div class="container-fluid">
+    <form method="POST" action="consulta.php" id="form">
+        <div class="row">
+            <div class="col">
+                <input type="text" name="txtpesquisa" placeholder="Buscar...">
+                <input type="submit" value="ok" class="btn btn-light">
+            </div>
+        </div>
+    </form>
+    <form method="post" action="recebedados.php">
+        <div row>
+            <div class="col">
+                <label>Codigo de Barras</label>
+                    <input type="text" name="txtcod" requiredplaceholder="Nome">
+                </div>
+            </div>
+            <div class="col">
+                <label>Nome</label>
+                    <input type="text" name="txtnome" requiredplaceholder="Nome">
+                </div>
+            </div>
+            <div class="col">
+                <label>Custo</label>
+                    <input type="number" name="txtcusto" requiredplaceholder="Nome">
+                </div>
+            </div>
+            <div class="col">
+                <label>Venda</label>
+                    <input type="number" name="txtvenda" requiredplaceholder="Nome">
+                </div>
+            </div>
+            <div class="col">
+                <label>Estoque</label>
+                    <input type="text" name="txtestoque" requiredplaceholder="Nome">
+                </div>
+            </div>
+            <div class="col">
+                <label>Foto</label>
+                    <input type="file" name="txtfoto" accept=".jpg, .png, .jpeg, .gif" requiredplaceholder="Nome">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="submit" name="btcadastrar" value="Enviar">
+                </div>
+            </div>
+    </form>
+</div>
+<script src="util.js"></script>
+</body>
+</html>

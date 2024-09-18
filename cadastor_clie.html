@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de clientes</title>
+    <link rel="stylesheet" href="estilos/cads.css">
+    <link rel="stylesheet" href="estilos/rolagem.css">
+    <script src="https://kit.fontawesome.com/37b0d771a1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <h1 class="titulo">
+            Cadastro clientes
+        </h1>
+    </div>
+    <div class="container-fluid">
+        <form method="post" action="recebecliente.php">
+            <div row>
+                <div class="col">
+                    <label>Nome</label>
+                        <input type="text" name="txtnome" requiredplaceholder="Nome">
+                </div>
+                <div class="col">
+                    <label>Sobrenome</label>
+                        <input type="text" name="txtsobrenome" requiredplaceholder="Sobrenome">
+                </div>
+                <div class="col">
+                    <label>Rua</label>
+                        <input type="text" name="txtrua" requiredplaceholder="Rua">
+                </div>
+                <div class="col">
+                    <label>Bairro</label>
+                        <input type="text" name="txtbairro" requiredplaceholder="Bairro">
+                </div>
+                <div class="col">
+                    <label>Cep</label>
+                        <input type="text" name="txtcep" requiredplaceholder="CEP">
+                </div>
+                <div class="col">
+                    <label>Cidade</label>
+                        <input type="text" name="txtcity" requiredplaceholder="Cidade">
+                </div>
+                <div class="col">
+                    <label>UF</label>
+                        <input type="text" name="txtuf" requiredplaceholder="UF">
+                </div>
+                <div class="col">
+                    <label>Celular</label>
+                        <input type="text" name="txtcel" requiredplaceholder="Celular">
+                </div>
+                <div class="col">
+                    <label>Email</label>
+                        <input type="email" name="txtemail" requiredplaceholder="Email">
+                </div>
+                <div class="col">
+                    <label>Senha</label>
+                        <input type="password" name="txtsenha" requiredplaceholder="Senha">
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="submit" name="btcadastrar" value="Enviar">
+                    </div>
+                </div>
+        </form>
+    </div>
+    <script src="src/js/util.js"></script>
+</body>
+</html>
